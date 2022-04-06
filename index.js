@@ -44,8 +44,8 @@ const template = `
 const $ = window.document.querySelector.bind(document);
 
 const init = () => {
+  $(".form-wrapper").style.display = "block";
   $("body").innerHTML += template;
-  initiateModal();
 };
 
 const close_btn = $(".close-btn").addEventListener("click", closeModal);
