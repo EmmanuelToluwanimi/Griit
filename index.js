@@ -10,13 +10,13 @@ const template = `
           <button class="close-btn" onclick="closeModal()">X</button>
         </div>
 
-        <form class="form-body">
+        <form class="form-body" onsubmit="handleSubmit(event)">
           <div class="inps">
             <input
               type="text"
               placeholder="Firstname"
               name="firstname"
-              class="input-holder"
+              onchange="handleChange(event)"
             />
           </div>
 
@@ -25,8 +25,7 @@ const template = `
               type="text"
               placeholder="Lastname"
               name="lastname"
-              class="input-holder"
-              
+              onchange="handleChange(event)"
             />
           </div>
 
@@ -50,6 +49,7 @@ const init = () => {
   }
 
   $(".form-wrapper").style.display = "block";
+
 };
 
 function initiateModal() {
@@ -70,9 +70,6 @@ function handleErrorMessage(msg) {
   }, 2000);
 }
 
-$(".input-holder").addEventListener("change", handleChange);
-$(".form-body").addEventListener("submit", handleSubmit);
-
 function handleChange(e) {
   user = {
     ...user,
@@ -80,8 +77,9 @@ function handleChange(e) {
   };
 }
 
-function handleSubmit(e) {
-  e.preventDefault();
+function handleSubmit(event) {
+  event.preventDefault();
+  $(".form-body").preventDefault();
 
   const { firstname, lastname } = user;
 
