@@ -1,0 +1,98 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.form-wrapper {
+  height: 100vh;
+  background-color: rgb(240, 240, 255);
+  padding-top: 30px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+.card-wrapper {
+  border: 1px solid rgb(178, 187, 233);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  width: 40%;
+  margin: auto;
+}
+.inps {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.inps > input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid rgb(178, 187, 233);
+  border-radius: 10px;
+  box-sizing: border-box;
+  outline-color: blue;
+}
+.inps > button {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid rgb(178, 187, 233);
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: blue;
+  color: white;
+  font-size: large;
+}
+.footer-message {
+  text-align: center;
+  color: rgb(59, 97, 112);
+}
+.close {
+  text-align: right;
+}
+.close-btn {
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 50%;
+  background: gray;
+  color: white;
+  border: none;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+.initiate-btn {
+  background: blue;
+  color: white;
+  border: 1px solid blue;
+  cursor: pointer;
+  padding: 10px;
+  font-size: large;
+  border-radius: 10px;
+  margin: 20px;
+}
+.error-body {
+  text-align: center;
+  color: red;
+  background: rgb(255, 204, 204);
+  padding: 5px;
+  margin-bottom: 20px;
+  font-size: large;
+  border-radius: 5px;
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .card-wrapper {
+    width: 40%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-wrapper {
+    width: auto;
+    margin: 30px;
+  }
+}
