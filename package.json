@@ -1,0 +1,24 @@
+{
+  "name": "griit",
+  "version": "1.0.0",
+  "description": "Griit is a demo library to alert users fullname",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmmanuelToluwanimi/Griit.git"
+  },
+  "keywords": [
+    "javascript",
+    "cdn",
+    "library"
+  ],
+  "author": "Amusan T. Emmanuel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmmanuelToluwanimi/Griit/issues"
+  },
+  "homepage": "https://github.com/EmmanuelToluwanimi/Griit#readme"
+}
