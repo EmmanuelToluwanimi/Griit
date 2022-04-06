@@ -10,7 +10,7 @@ const template = `
           <button class="close-btn" onclick="closeModal()">X</button>
         </div>
 
-        <form class="form-body" onchange="handleSubmit(event)">
+        <form class="form-body">
           <div class="inps">
             <input
               type="text"
