@@ -1,2 +1,2 @@
 # Griit
- Griit is a demo library to alert users fullname.
+ Griit is a javascript demo library to alert users fullname.
