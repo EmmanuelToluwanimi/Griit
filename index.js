@@ -44,13 +44,13 @@ const template = `
 const $ = window.document.querySelector.bind(document);
 
 const init = () => {
-  $("body").innerHTML += template;
+  if (!$(".form-wrapper")) {
+    $("body").innerHTML += template;
+  }
+
   $(".form-wrapper").style.display = "block";
+
 };
-
-const close_btn = $(".close-btn").addEventListener("click", closeModal);
-
-const form_body = $(".form-wrapper").addEventListener("submit", handleSubmit);
 
 function initiateModal() {
   $(".form-wrapper").style.display = "block";
