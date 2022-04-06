@@ -1,6 +1,6 @@
 {
   "name": "greeet",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Greeet is a javascript demo library to alert users fullname",
   "main": "index.js",
   "scripts": {

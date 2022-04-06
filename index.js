@@ -7,10 +7,10 @@ const template = `
     <div class="form-wrapper">
       <div class="card-wrapper">
         <div class="close">
-          <button class="close-btn">X</button>
+          <button class="close-btn" onclick="closeModal()">X</button>
         </div>
 
-        <form class="form-body">
+        <form class="form-body" onchange="handleSubmit(event)">
           <div class="inps">
             <input
               type="text"
@@ -44,8 +44,8 @@ const template = `
 const $ = window.document.querySelector.bind(document);
 
 const init = () => {
-  $(".form-wrapper").style.display = "block";
   $("body").innerHTML += template;
+  $(".form-wrapper").style.display = "block";
 };
 
 const close_btn = $(".close-btn").addEventListener("click", closeModal);
