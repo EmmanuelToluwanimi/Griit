@@ -16,7 +16,7 @@ const template = `
               type="text"
               placeholder="Firstname"
               name="firstname"
-              onchange="handleChange(event)"
+              class="input-holder"
             />
           </div>
 
@@ -25,7 +25,8 @@ const template = `
               type="text"
               placeholder="Lastname"
               name="lastname"
-              onchange="handleChange(event)"
+              class="input-holder"
+              
             />
           </div>
 
@@ -49,7 +50,6 @@ const init = () => {
   }
 
   $(".form-wrapper").style.display = "block";
-
 };
 
 function initiateModal() {
@@ -69,6 +69,9 @@ function handleErrorMessage(msg) {
     $(".error-body").style.display = "none";
   }, 2000);
 }
+
+$(".input-holder").addEventListener("change", handleChange);
+$(".form-body").addEventListener("submit", handleSubmit);
 
 function handleChange(e) {
   user = {
