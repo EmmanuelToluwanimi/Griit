@@ -32,7 +32,7 @@ const template = `
           <div class="error-body"></div>
 
           <div class="inps">
-            <button type="submit">Griit</button>
+            <button type="submit">Greeet</button>
           </div>
         </form>
 
@@ -92,10 +92,10 @@ function handleSubmit(e) {
   $(".form-body").reset();
 }
 
-const Griit = {
+const Greeet = {
   init,
 };
 
 if (typeof exports != "undefined") {
-  exports.Griit;
+  exports.Greeet;
 }

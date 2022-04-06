@@ -1,7 +1,7 @@
 {
-  "name": "griit",
+  "name": "greeet",
   "version": "1.0.0",
-  "description": "Griit is a javascript demo library to alert users fullname",
+  "description": "Greeet is a javascript demo library to alert users fullname",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
